@@ -1,0 +1,391 @@
+
+
+Curso tecnologia web html5 · HTML
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Tecnología Web</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+ 
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            color: #111827;
+            line-height: 1.5;
+            background-color: #ffffff;
+        }
+ 
+        a {
+            color: inherit;
+        }
+ 
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+ 
+        /* ===== Encabezado ===== */
+        header {
+            background-color: #174f86;
+            color: #ffffff;
+        }
+ 
+        header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 70px;
+            flex-wrap: wrap;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+ 
+        header h1 {
+            font-size: 1.4rem;
+        }
+ 
+        header nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 24px;
+        }
+ 
+        header nav a:hover {
+            text-decoration: underline;
+        }
+ 
+        /* ===== Sección Inicio ===== */
+        .inicio .container {
+            display: flex;
+            gap: 32px;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding: 24px;
+        }
+ 
+        .inicio-texto {
+            flex: 1 1 320px;
+        }
+ 
+        .inicio-texto h2 {
+            font-size: 1.9rem;
+            margin-bottom: 12px;
+        }
+ 
+        .inicio-texto p {
+            margin-bottom: 14px;
+        }
+ 
+        .inicio-imagen {
+            flex: 1 1 320px;
+            text-align: center;
+        }
+ 
+        .inicio-imagen img {
+            width: 95%;
+            border-radius: 6px;
+        }
+ 
+        button,
+        .btn {
+            font: inherit;
+            background-color: #174f86;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 18px;
+            cursor: pointer;
+        }
+ 
+        /* ===== Temas y pasos ===== */
+        .temas .container {
+            display: flex;
+            gap: 32px;
+            flex-wrap: wrap;
+            padding: 24px;
+        }
+ 
+        .temas-col {
+            flex: 1 1 320px;
+        }
+ 
+        .temas-col ul,
+        .temas-col ol {
+            padding-left: 22px;
+            margin: 10px 0;
+        }
+ 
+        .temas-col li {
+            margin-bottom: 6px;
+        }
+ 
+        /* ===== Horario ===== */
+        .horario .container {
+            padding: 24px;
+        }
+ 
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+ 
+        caption {
+            text-align: left;
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            font-weight: bold;
+        }
+ 
+        th, td {
+            border: 1px solid #000000;
+            padding: 6px 10px;
+            text-align: center;
+        }
+ 
+        thead th {
+            background-color: #dceaf7;
+        }
+ 
+        /* ===== Contacto ===== */
+        .contacto {
+            background-color: #f2f7fb;
+        }
+ 
+        .contacto .container {
+            padding: 24px;
+        }
+ 
+        .contacto h2 {
+            margin-bottom: 16px;
+        }
+ 
+        .campo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
+ 
+        .campo label {
+            width: 160px;
+            flex-shrink: 0;
+        }
+ 
+        .campo input,
+        .campo select,
+        .campo textarea {
+            flex: 1 1 280px;
+            padding: 6px 8px;
+            font: inherit;
+        }
+ 
+        /* ===== Pie de página ===== */
+        footer {
+            background-color: #174f86;
+            color: #ffffff;
+            text-align: center;
+            padding: 18px;
+        }
+ 
+        /* ===== Responsive ===== */
+        @media (max-width: 700px) {
+            header .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+ 
+            header nav a {
+                margin-left: 0;
+                margin-right: 16px;
+            }
+ 
+            .campo {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+ 
+            .campo label {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+ 
+<body>
+ 
+    <header>
+        <div class="container">
+            <h1>Curso de Tecnología Web</h1>
+            <nav aria-label="Navegación principal">
+                <a href="#inicio">Inicio</a>
+                <a href="#temas">Temas</a>
+                <a href="#horario">Horario</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+ 
+    <main>
+ 
+        <section class="inicio" id="inicio">
+            <div class="container">
+                <div class="inicio-texto">
+                    <h2>Curso de Tecnología Web</h2>
+ 
+                    <p>
+                        Aprende las bases del desarrollo web y crea tus propias
+                        páginas utilizando HTML, CSS, JavaScript y herramientas
+                        de control de versiones como Git.
+                    </p>
+ 
+                    <p>
+                        <a href="#contacto" class="btn">Ir al formulario de contacto</a>
+                    </p>
+ 
+                    <p>
+                        <a href="https://www.google.com" target="_blank" rel="noopener">
+                            Visita la Universidad
+                        </a>
+                    </p>
+                </div>
+ 
+                <div class="inicio-imagen">
+                    <img
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                        alt="Computadora con código de programación">
+                </div>
+            </div>
+        </section>
+ 
+        <section class="temas" id="temas">
+            <div class="container">
+                <div class="temas-col">
+                    <h2>&iquest;Qu&eacute; aprender&aacute;s?</h2>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Git y GitHub</li>
+                    </ul>
+                    <p>
+                        Este curso está diseñado para que adquieras habilidades
+                        prácticas y puedas desarrollar proyectos web.
+                    </p>
+                </div>
+ 
+                <div class="temas-col">
+                    <h2>Pasos para tu proyecto web</h2>
+                    <ol>
+                        <li>Planifica tu proyecto.</li>
+                        <li>Crea la estructura de tu página.</li>
+                        <li>Agrega el contenido y los elementos.</li>
+                        <li>Prueba y mejora tu sitio.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+ 
+        <section class="horario" id="horario">
+            <div class="container">
+                <table>
+                    <caption>Horario del curso</caption>
+                    <thead>
+                        <tr>
+                            <th>D&iacute;a</th>
+                            <th>Semana</th>
+                            <th>Tipo de Sesi&oacute;n</th>
+                            <th>Tema</th>
+                            <th>Horario</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lunes</td>
+                            <td rowspan="4">Semana 1-3</td>
+                            <td>Clase Te&oacute;rica</td>
+                            <td>HTML</td>
+                            <td>HTML (5:00 p.m.)</td>
+                        </tr>
+                        <tr>
+                            <td>Mi&eacute;rcoles</td>
+                            <td>Clase Pr&aacute;ctica</td>
+                            <td>CSS</td>
+                            <td>CSS a las 5:00 p.m.</td>
+                        </tr>
+                        <tr>
+                            <td>Viernes</td>
+                            <td>Lab</td>
+                            <td>JavaScript</td>
+                            <td>5:00 p.m.</td>
+                        </tr>
+                        <tr>
+                            <td>S&aacute;bado</td>
+                            <td></td>
+                            <td>Proyecto final</td>
+                            <td>9:00 a.m.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+ 
+        <section class="contacto" id="contacto">
+            <div class="container">
+                <h2>Contacto</h2>
+ 
+                <form action="#" method="post">
+                    <div class="campo">
+                        <label for="nombre">Nombre:</label>
+                        <input id="nombre" name="nombre" type="text" placeholder="Tu nombre">
+                    </div>
+ 
+                    <div class="campo">
+                        <label for="correo">Correo electr&oacute;nico:</label>
+                        <input id="correo" name="correo" type="email" placeholder="tu@correo.com">
+                    </div>
+ 
+                    <div class="campo">
+                        <label for="telefono">Tel&eacute;fono:</label>
+                        <input id="telefono" name="telefono" type="tel" placeholder="Tu número de teléfono">
+                    </div>
+ 
+                    <div class="campo">
+                        <label for="curso">Curso de inter&eacute;s:</label>
+                        <select id="curso" name="curso">
+                            <option value="">Selecciona un curso</option>
+                            <option value="html">HTML5</option>
+                            <option value="css">CSS3</option>
+                            <option value="javascript">JavaScript</option>
+                            <option value="git">Git y GitHub</option>
+                        </select>
+                    </div>
+ 
+                    <div class="campo">
+                        <label for="comentario">Comentario:</label>
+                        <textarea id="comentario" name="comentario" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+ 
+                    <div class="campo">
+                        <label></label>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+ 
+    </main>
+ 
+    <footer>
+        <p>Ricaurte Rodriguez &nbsp;|&nbsp; 2026 &nbsp;|&nbsp; Desarrollo Web V</p>
+    </footer>
+ 
+</body>
+</html>
